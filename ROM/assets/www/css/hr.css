@@ -1,0 +1,58 @@
+table {
+    border: medium none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: inherit;
+    margin: 10px 0;
+    padding: 0;
+    width: 100%;
+}
+
+table th {
+    background: none repeat scroll 0 0 #E5E4DF;
+    border: medium none;
+    color: #DB182A;
+}
+
+td, th {
+    border: medium none;
+    margin: 0;
+    padding: 5px 7px;
+}
+
+caption, th, td {
+    text-align: left;
+}
+
+
+tr.even {
+    background-color: #FFFFFF;
+}
+
+tr.even, tr.odd {
+    border: medium none;
+}	
+
+tr.odd, tr.info {
+    background-color: #F5F5F5;
+}
+
+.form-submit, a.btn {
+    background-color: #D8182A;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 4px 10px;
+}
+
+.form-submit:hover, a.btn:hover {
+    background-color: #FAA61A;
+    color: #FFFFFF !important;
+}
+
+body{
+	margin-top:45px;
+	margin-bottom:65px;
+}

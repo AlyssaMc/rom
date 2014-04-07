@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript" src="../../js/cordova.js"></script>
+		<script type="text/javascript" src="../../js/SocialSharing.js"></script>
+  		<script type="text/javascript" src="../../js/tinybox.js"></script>
+  		<script type="text/javascript" src="../../js/tour.js"></script>
+  		<script type="text/javascript" src="../../js/indexPageSlider.js"></script>
+		<script type="text/javascript" src="../../js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="../../js/quo.js"></script>
+		<script type="text/javascript" src="../../js/fastclick.js"></script>
+        <script type="text/javascript" src="../../js/pagingSlider.js"></script>
+        <link rel="stylesheet" type="text/css" href="../../css/indexPageSlider.css" />
+        <link rel="stylesheet" type="text/css" href="../../css/mainPageSlider.css" />
+        <link rel="stylesheet" type="text/css" href="../../css/digtourlist.css">
+        <link rel="stylesheet" type="text/css" href="../../css/headerFooter.css">
+		<link rel="stylesheet" type="text/css" href="../../css/style.css">
+    </head>
+
+	<div class=titleBar>
+  		<span style="float:left;padding:10px 0px 0px 5px;"> <a><img src="../../images/previous.png" onclick="app.updateDBbySwitchToPage(app.getUserId(), pagingSlider._currentPage, './digtourlist.html', 1);"></a></span> 
+	   	<span style="display:block;padding:15px 80px;color:white;text-align:center"> Family Tour Part 1: Biodiversity </span>
+	</div>
+	
+    <body style="margin-top:70px;">
+   		<h4 style="text-align:center;font-size:20px;">Tour Stops:</h4>
+	    <div class="header-menu clearfix" style="text-align:center;font-size:20px">
+			<a href="javascript:void(0);" style="margin-left:40px;" onclick="pagingSlider.switchToPage('.myPageContainerClass', 1);">1: Rhino</a>
+			<a href="javascript:void(0);" style="margin-left:40px;" onclick="pagingSlider.switchToPage('.myPageContainerClass', 2);">2: Reef Tank</a>
+			<a href="javascript:void(0);" style="margin-left:40px;" onclick="pagingSlider.switchToPage('.myPageContainerClass', 3);">3: Fish</a>
+			<a href="javascript:void(0);" style="margin-left:40px;" onclick="pagingSlider.switchToPage('.myPageContainerClass', 4);">4: Dragon</a>
+			<a href="javascript:void(0);" style="margin-left:40px;" onclick="pagingSlider.switchToPage('.myPageContainerClass', 5);">5: Bat</a>
+	    </div>    
+	    <div id="pointers" class="footer-menu">
+		    <ul class="pager clearfix">
+		        <li style="margin-left:70px;" class="active"></li>
+		        <li style="margin-left:70px;"></li>
+		        <li style="margin-left:70px;"></li>
+		        <li style="margin-left:70px;"></li>
+		        <li style="margin-left:70px;"></li>
+		    </ul>
+		</div>
+	    
+        <div>
+            <div id="deviceready">
+                <div id="wrapper event received">
+				    <div id="wrapper-inner">
+				        <div class="slidepage-container myPageContainerClass">
+				            <div id="1.1" page="1" prev-left="1.5" prev-right="1.2" class="page center current">
+				                <div class="content" style="overflow:auto; position:absolute; top: 0px; left:0px; right:0px; bottom:0px">
+				                   <h2>Stop 1. "Bull," The Southern White Rhino</h2>
+				                   </br>
+				                   <div id="stop1" class="tourstop">
+								 	   <div class="stopTitle">
+								 	   		<div id="centerDiv" style="width:100%;border-radius:5px;border:3px solid #841B84;">
+												<div id="tourIcons" style="padding-top:5px;padding-left:10px;">				
+									 	   			<span id="map" style="padding-right:80px;padding-left:5px;"><img class="css_btn_icon" onclick="TINY.box.show({image:'../../images/tour1/rhino-detail.jpg',boxid:'frameless',animate:true})" src="../../images/mapicon.png"/></span>
+									 	   			<span class="icons" id="wikipedia" style="padding-right:80px;"><img class="css_btn_icon" onclick="TINY.box.show({iframe:'http://en.wikipedia.org/wiki/Southern_White_Rhino_%28%22Bull%22%29',boxid:'frameless',width:550,height:450,fixed:false})" src="../../images/wikiicon.png"/></span>
+										 	   		<span class="icons" id="share" style="padding-right:80px;"><img class="css_btn_icon" onclick="window.plugins.socialsharing.share('I am at ROM!','The subject', 'www/images/tour1/rhino_0.jpg', 'http://www.rom.on.ca/tours/family-one/southern-white-rhino')" src="../../images/shareicon2.png"/></span>
+										 	   		<span class="icons" id="bookmark1" bookmarkflag="false"><img class="css_btn_icon" onclick="javascript:bookmarkItem('bookmark1')" src="../../images/bookmark_shaded.png"/></span>
+								 	   			</div>	 	   		
+								 	   		</div>
+								 	   	</div>
+								 	   		</br>
+								 	   		<div style="border:1px solid black;width:100%;"></div>
+								 	   		</br>
+
+								 	   <div class="imageSub" >
+							        		<img src="../../images/tour1/rhino_0.jpg" style="width:100%;" />
+							        		<div class="blackbg"></div>
+							       			<div class="label">Bull, the Toronto Zoo's oldest Southern White Rhino</div>
+							       	   </div>
+								 	   
+								 	   <div class="stopDescription"> 
+								 	   <h3> Life in Crisis: Schad Gallery of Biodiversity </h3>
+								 	   <p> <B> Level 2, Centre Block </B></p>
+								 	   
+								 	   <p> Meet "Bull", the Toronto Zoo's oldest Southern White Rhino. He died at the age of 45 and,
+								 	    since February 2009, has been standing tall at the entrance to the ROM's Schad Gallery of Biodiversity. </p>
+								 	   <h3>Why It's Iconic </h3> 
+								 	   <p> White rhinos are the second-largest land animal, measuring 11 feet long and weighing 4,500 pounds.
+								 	     This species was brought back from the brink of extinction in the 1990s, but is in serious trouble again due to poaching
+								 	     for its horns. </p>	
+								 	     
+								 	     <iframe width="500" height="345" src="http://www.youtube.com/embed/QQVEoYI0FMI"></iframe>
+								  		</div>
+							  		</div>
+				                </div>
+				            </div>
+				            
+				            <div id="1.2" page="2" prev-left="1.1" prev-right="1.3" class="page right">
+				                <div class="content" style="overflow:auto; position:absolute; top: 0px; left:0px; right:0px; bottom:0px">
+				                   <h2>Stop 2. Coral Reef Tank</h2>
+				                   </br>
+				                   <div id="stop2" class="tourstop">
+							 	   <div class="stopTitle">
+							 	   		<div>
+							 	   			<div id="centerDiv" style="width:100%;border-radius:5px;border:3px solid #841B84;">
+											<div id="tourIcons" style="padding-top:5px;padding-left:10px;">				
+								 	   			<span id="map" style="padding-right:80px;padding-left:5px;"><img class="css_btn_icon" onclick="TINY.box.show({image:'../../images/tour1/coral-detail.jpg',boxid:'frameless',animate:true})" src="../../images/mapicon.png"/></span>
+								 	   			<span class="icons" id="wikipedia" style="padding-right:80px;"><img class="css_btn_icon" onclick="TINY.box.show({iframe:'http://en.wikipedia.org/wiki/Reef_aquarium',boxid:'frameless',width:550,height:450,fixed:false})" src="../../images/wikiicon.png"/></span>
+									 	   		<span class="icons" id="share" style="padding-right:80px;"><img class="css_btn_icon" onclick="window.plugins.socialsharing.share('I am at ROM!','The subject', 'www/images/tour1/coral_0.jpg', 'http://www.rom.on.ca/tours/family-one/coral-reef-tank')" src="../../images/shareicon2.png"/></span>
+									 	   		<span class="icons" id="bookmark2" bookmarkflag="false"><img class="css_btn_icon" onclick="javascript:bookmarkItem('bookmark2')" src="../../images/bookmark_shaded.png"/></span>
+							 	   			</div>	
+							 	   		</div>
+							 	   			</br>
+								 	   		<div style="border:1px solid black;width:100%;"></div>
+								 	   		</br>
+							 	   		</div>
+							 	   	</div>
+							 	   	<div class="imageSub" >
+						        		<img src="../../images/tour1/coral_0.jpg" style="width:100%;" />
+						        		<div class="blackbg"></div>
+						       			<div class="label">Coral Reef</div>
+						       	   </div>
+						       	   
+							 	   <div class="stopDescription"> 
+							 	   <h3> Life in Crisis: Schad Gallery of Biodiversity </h3>
+							 	   <p> <B> Level 2, Centre Block </B></p>
+							 	   <p>Walk to the right of the rhino and go straight past the bison and polar bear, 
+							 	   walking underneath whales and sharks suspended from the ceiling, to the Coral Reef Tank. </p>
+							 	   
+							 	   <p> This Coral Reef represents a vital underwater ecosystem in the Indo-Pacific region. 
+							 	   It demonstrates the balance between fish and coral, and how they both survive together from the
+							 	    nutrients of a healthy ocean. </p>
+							 	    
+							 	   <h3> Cool Fact </h3> 
+							 	   <p> Often mistaken as a plant, the coral is actually an ever-growing colony of invertebrates.</p>
+							  			
+							  		<iframe width="500" height="345" src="http://www.youtube.com/embed/ibaL9sHpkBo"></iframe>
+							  		</div>
+						  		</div>
+				                </div>
+				            </div>
+				            <div id="1.3" page="3" prev-left="1.2" prev-right="1.4" class="page right">
+				                <div class="content" style="overflow:auto; position:absolute; top: 0px; left:0px; right:0px; bottom:0px">
+				                   <h2>Stop 3. Kroyer's Deep Sea Angler Fish</h2>
+				                   </br>
+				                   <div id="stop3" class="tourstop">
+							 	   <div class="stopTitle">
+							 	   		<div id="centerDiv" style="width:100%;border-radius:5px;border:3px solid #841B84;">
+							 	   			<div id="tourIcons" style="padding-top:5px;padding-left:10px;">				
+								 	   			<span id="map" style="padding-right:80px;padding-left:5px;"><img class="css_btn_icon" onclick="TINY.box.show({image:'../../images/tour1/angler-detail.jpg',boxid:'frameless',animate:true})" src="../../images/mapicon.png"/></span>
+								 	   			<span class="icons" id="wikipedia" style="padding-right:80px;"><img class="css_btn_icon" onclick="TINY.box.show({iframe:'http://en.wikipedia.org/wiki/Kr%C3%B8yer%27s_deep_sea_angler_fish',boxid:'frameless',width:550,height:450,fixed:false})" src="../../images/wikiicon.png"/></span>
+									 	   		<span class="icons" id="share" style="padding-right:80px;"><img class="css_btn_icon" onclick="window.plugins.socialsharing.share('I am at ROM!','The subject', 'www/images/tour1/angler_0.jpg', 'http://www.rom.on.ca/en/visit-us/maps-tours/digital-tours/family-one/angler-fish')" src="../../images/shareicon2.png"/></span>
+									 	   		<span class="icons" id="bookmark3" bookmarkflag="false"><img class="css_btn_icon" onclick="javascript:bookmarkItem('bookmark3')" src="../../images/bookmark_shaded.png"/></span>
+							 	   			</div>	 	
+							 	   		</div>
+							 	   			</br>
+								 	   		<div style="border:1px solid black;width:100%;"></div>
+								 	   		</br>
+							 	   	</div>
+							
+								   <div class="imageSub" >
+						        		<img src="../../images/tour1/angler_0.jpg" style="width:100%;" />
+						        		<div class="blackbg"></div>
+						       			<div class="label">The Deep Sea Angler Fish</div>
+						       	   </div>
+							 	   <div class="stopDescription"> 
+							 	   <h3> Life in Crisis: Schad Gallery of Biodiversity </h3>
+							 	   <p> <B> Level 2, Centre Block </B></p>
+							 	   <p>Keep going further into the gallery till you come across a central display with a very long fish. 
+							 	   Right below the elongated fish (known as the Crested Oarfish) is our friend, the Kroyer's Deep Sea angler fish. </p>
+							 	   
+							 	   <p> The <b>Deep Sea Angler Fish</b> is found 3000 meters below the ocean's surface. It's very difficult to survive in these dark,
+							 	    cold conditions, especially as there are few prey species at those depths. The large mouth and long, sharp teeth of the Angler Fish
+							 	     help capture prey two times longer than itself! </p>
+							 	    
+							 	   <h3> Fun Fact </h3> 
+							 	   <p> The name Angler Fish comes from the fishing-rod like antenna that hangs over its mouth.
+							 	    The little flap of tissue at the end of the rod is bio-luminescent, meaning it projects light to attract its prey.</p>
+							  		
+							  		<iframe width="500" height="345" src="http://www.youtube.com/embed/Ls8stjtjsNA"></iframe>
+							  		</div>
+						  		</div>
+				                </div>
+				            </div>
+				            <div id="1.4" page="4" prev-left="1.3" prev-right="1.5" class="page right">
+				                <div class="content" style="overflow:auto; position:absolute; top: 0px; left:0px; right:0px; bottom:0px">
+				                   <h2>Stop 4. Komodo Dragon </h2>
+				                   </br>
+				                   <div id="stop4" class="tourstop">
+							 	   <div class="stopTitle">
+							 	   		<div id="centerDiv" style="width:100%;border-radius:5px;border:3px solid #841B84;">
+							 	   			<div id="tourIcons" style="padding-top:5px;padding-left:10px;">				
+								 	   			<span id="map" style="padding-right:80px;padding-left:5px;"><img class="css_btn_icon" onclick="TINY.box.show({image:'../../images/tour1/komodo-detail.jpg',boxid:'frameless',animate:true})" src="../../images/mapicon.png"/></span>
+								 	   			<span class="icons" id="wikipedia" style="padding-right:80px;"><img class="css_btn_icon" onclick="TINY.box.show({iframe:'http://en.wikipedia.org/wiki/Komodo_dragon',boxid:'frameless',width:550,height:450,fixed:false})" src="../../images/wikiicon.png"/></span>
+									 	   		<span class="icons" id="share" style="padding-right:80px;"><img class="css_btn_icon" onclick="window.plugins.socialsharing.share('I am at ROM!','The subject', 'www/images/tour1/angler_0.jpg', 'http://www.rom.on.ca/tours/family-one/komodo-dragon')" src="../../images/shareicon2.png"/></span>
+									 	   		<span class="icons" id="bookmark4" bookmarkflag="false"><img class="css_btn_icon" onclick="javascript:bookmarkItem('bookmark4')" src="../../images/bookmark_shaded.png"/></span>
+							 	   			</div>	 
+							 	   		</div>
+							 	   			</br>
+								 	   		<div style="border:1px solid black;width:100%;"></div>
+								 	   		</br>
+							 	   	</div>
+							 	   	
+							 	   	<div class="imageSub">
+						        		<img src="../../images/tour1/komodo_0.jpg" style="width:100%;" />
+						        		<div class="blackbg"></div>
+						       			<div class="label">A Komodo dragon skeleton</div>
+						       	   </div>
+							
+							 	   <div class="stopDescription"> 
+							 	   <h3> Life in Crisis: Schad Gallery of Biodiversity </h3>
+							 	   <p> <B> Level 2, Centre Block </B></p>
+							 	   <p>Next to the angler fish display and to its right is where you'll find the ferocious Komodo dragon skeleton,
+							 	    posturing alongside the largest flower in the world. </p>
+							 	   
+							 	   <p> The <b>Komodo dragon</b> carries the formidable reputation of being a fearsome predator.
+							 	    It is the world's largest and most dangerous living lizard, found only in Indonesia near the island of Komodo. </p>
+							 	    
+							 	   <h3> Cool Fact </h3> 
+							 	   <p> The Komodo dragon's saliva contains over 50 strains of bacteria, ensuring that any creature that escapes its
+							 	    jaws won't escape for long. Its prey includes birds, invertebrate animals and mammals, but the dragon's food of 
+							 	    choice is deer.</p>
+							 	    
+							 	    <iframe width="500" height="345" src="http://www.youtube.com/embed/MxQrB3AY_8E"></iframe>
+							  		</div>
+						  		</div>
+				                </div>
+				            </div>
+				            <div id="1.5" page="5" prev-left="1.4" prev-right="1.1" class="page right">
+				                <div class="content" style="overflow:auto; position:absolute; top: 0px; left:0px; right:0px; bottom:0px">
+				                   <h2>Stop 5. Moustached Bats</h2>
+				                   </br>
+				                   <div id="stop5" class="tourstop">
+							 	   <div class="stopTitle">
+							 	   		<div id="centerDiv" style="width:100%;border-radius:5px;border:3px solid #841B84;">
+							 	   			<div id="tourIcons" style="padding-top:5px;padding-left:10px;">				
+								 	   			<span id="map" style="padding-right:80px;padding-left:5px;"><img class="css_btn_icon" onclick="TINY.box.show({image:'../../images/tour1/bat-detail.jpg',boxid:'frameless',animate:true})" src="../../images/mapicon.png"/></span>
+								 	   			<span id="wikipedia" style="padding-right:80px;"><img class="css_btn_icon" onclick="TINY.box.show({iframe:'http://en.wikipedia.org/wiki/Wagner%27s_mustached_bat',boxid:'frameless',width:550,height:450,fixed:false})" src="../../images/wikiicon.png"/></span>
+									 	   		<span id="share" style="padding-right:80px;"><img class="css_btn_icon" onclick="window.plugins.socialsharing.share('I am at ROM!','The subject', 'www/images/tour1/bat_0.jpg', 'http://www.rom.on.ca/en/visit-us/maps-tours/digital-tours/family-one/moustached-bats')" src="./images/shareicon2.png"/></span>
+									 	   		<span id="bookmark5" bookmarkflag="false"><img class="css_btn_icon" onclick="javascript:bookmarkItem('bookmark5')" src="./images/bookmark_shaded.png"/></span>
+							 	   			</div>
+							 	   	</div>
+							 	   			</br>
+								 	   		<div style="border:1px solid black;width:100%;"></div>
+								 	   		</br>
+							
+									<div class="imageSub" >
+						        		<img src="../../images/tour1/bat_0.jpg" style="width:100%;"/>
+						        		<div class="blackbg"></div>
+						       			<div class="label">The ROM's Bat Cave</div>
+						       	   </div>
+						
+							 	   <div class="stopDescription"> 
+							 	   <h3> Life in Crisis: Schad Gallery of Biodiversity </h3>
+							 	   <p> <B> Level 2, Centre Block </B></p>
+							 	   <p>Go around the case (no, we're not making you walk around in circles), and take the walkway to your right, 
+							 	   just past the cinnamon bear, towards the entrance to the Bat Cave. </p>
+							 	   
+							 	   <p> The <b>Moustached Bat</b> is a grey-coloured bat found primarily in the caves of Jamaica and Central and
+							 	    South America. It gets its name from the stiff hairs lining its upper lip. </p>
+							 	    
+							 	   <h3> Cool Fact </h3> 
+							 	   <p> If you find yourself surrounded by these furry mammals, don't panic! Unlike some of their relatives who 
+							 	   also eat meat and fruit, these bats only eat insects.</p>
+							  		</div>
+							  		<iframe width="500" height="345" src="http://www.youtube.com/embed/SydIv_-MWfk"></iframe>
+						  		</div>
+         			 		</div>
+        				</div>
+    				</div>
+				</div>   
+			</div>      
+		</div>
+        
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+        
+    </body>
+        <div class="bottomBar">
+  			<table id="menuTable">
+  				<tbody>
+					<tr>
+						<td id="menuTd">
+							<a onclick="app.updateDBbySwitchToPage(app.getUserId(), pagingSlider._currentPage, '../main.html', 1);"><div class="bottomBarButton"> Home </div></a>
+						</td>
+						<td id="menuTd">
+							<a onclick="app.updateDBbySwitchToPage(app.getUserId(), pagingSlider._currentPage, '../maps/map.html', 1);"><div class="bottomBarButton"> Maps </div></a>
+						</td>
+					</tr>
+		  	</table>
+		</div>  
+</html>

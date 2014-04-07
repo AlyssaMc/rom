@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<HTML>
+  <head>
+    <title>Royal Ontario Museum Mobile Demo</title>
+  	<link rel="stylesheet" type="text/css" href="../../css/headerFooter.css">
+  	<script type="text/javascript" src="../../js/iscroll-zoom.js"></script>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  </head>
+  
+   <script type="text/javascript">
+    	var myScroll;
+    function loaded() {
+	        myScroll = new IScroll('#wrapper', {
+			zoom: true,
+			scrollX: true,
+			scrollY: true,
+			mouseWheel: true,
+			wheelAction: 'zoom'
+		});
+	}
+	
+	document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+   </script>
+  
+  <body onload="loaded()">
+  <div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+  	<div class=titleBar>
+	  		<span style="float:left;padding:10px 0px 0px 5px;"> <a href="map.html"> <img src="../../images/previous.png"></a></span> 
+		   	<span style="display:block;padding:15px 80px;color:white;text-align:center"> Level B1 </span>
+   	</div>
+   		
+	<div id="wrapper" style="width:100%;margin-top:60px;margin-bottom:60px;">
+		<div id="scroller">
+			<img src="../../images/levelb1.png" width="800" style="max-width:100%; height:auto;">
+		</div>
+	</div>
+	
+		<div class="bottomBar">
+  			<table id="menuTable">
+  				<tbody>
+					<tr>
+						<td id="menuTd">
+							<a href="../main.html"><div class="bottomBarButton"> Home </div></a>
+						</td>
+						<td id="menuTd">
+							<a href="map.html"><div class="bottomBarButton"> Maps </div></a>
+						</td>
+					</tr>
+		  	</table>
+		</div>  
+  </body>
+</HTML>

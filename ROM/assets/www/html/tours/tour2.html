@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript" src="../../js/cordova.js"></script>
+		<script type="text/javascript" src="../../js/SocialSharing.js"></script>
+		<script type="text/javascript" src="../../js/tour.js"></script>
+		<script type="text/javascript" src="../../js/indexPageSlider.js"></script>
+		<script type="text/javascript" src="../../js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="../../js/quo.js"></script>
+		<script type="text/javascript" src="../../js/fastclick.js"></script>
+        <script type="text/javascript" src="../../js/pagingSlider.js"></script>
+        <link rel="stylesheet" type="text/css" href="../../css/indexPageSlider.css" />
+        <link rel="stylesheet" type="text/css" href="../../css/mainPageSlider.css" />
+        <link rel="stylesheet" type="text/css" href="../../css/digtourlist.css">
+        <link rel="stylesheet" type="text/css" href="../../css/headerFooter.css">
+		<link rel="stylesheet" type="text/css" href="../../css/style.css">
+  		<script type="text/javascript" src="../../js/tinybox.js"></script>
+    </head>
+    
+	<div class=titleBar>
+		<span style="float:left;padding:10px 0px 0px 5px;"> <a><img src="../../images/previous.png" onclick="app.updateDBbySwitchToPage(app.getUserId(), pagingSlider._currentPage, './digtourlist.html', 2);"></a></span> 
+	   	<span style="display:block;padding:15px 80px;color:white;text-align:center;font-size:20px;"> Family Tour Part 2: Ancient Cultures & Fossils </span>
+	</div>
+    <body style="margin-top:70px;">
+   		<h4 style="text-align:center;font-size:20px;">Tour Stops:</h4>
+	    <div class="header-menu clearfix" style="text-align:center;font-size:20px">
+			<a href="javascript:void(0);" style="margin-left:20px;" onclick="pagingSlider.switchToPage('.myPageContainerClass', 1);">1: Larnax </a>
+			<a href="javascript:void(0);" style="margin-left:20px;" onclick="pagingSlider.switchToPage('.myPageContainerClass', 2);">2: Iby-ref </a>
+			<a href="javascript:void(0);" style="margin-left:20px;" onclick="pagingSlider.switchToPage('.myPageContainerClass', 3);">3: Shiva </a>
+			<a href="javascript:void(0);" style="margin-left:20px;" onclick="pagingSlider.switchToPage('.myPageContainerClass', 4);">4: Puppet </a>
+			<a href="javascript:void(0);" style="margin-left:20px;" onclick="pagingSlider.switchToPage('.myPageContainerClass', 5);">5: Shells </a>
+			<a href="javascript:void(0);" style="margin-left:20px;" onclick="pagingSlider.switchToPage('.myPageContainerClass', 6);">6: "Gordo" </a>
+			<a href="javascript:void(0);" style="margin-left:20px;" onclick="pagingSlider.switchToPage('.myPageContainerClass', 7);">7: Sloth </a>
+	    </div>    
+	    <div id="pointers" class="footer-menu">
+		    <ul class="pager clearfix">
+		        <li style="margin-left:50px;" class="active"></li>
+		        <li style="margin-left:50px;"></li>
+		        <li style="margin-left:50px;"></li>
+		        <li style="margin-left:50px;"></li>
+		        <li style="margin-left:50px;"></li>
+		        <li style="margin-left:50px;"></li>
+		        <li style="margin-left:50px;"></li>
+		    </ul>
+		</div>
+	    
+        <div>
+            <div id="deviceready">
+                <div id="wrapper event received">
+				    <div id="wrapper-inner">
+				        <div class="slidepage-container myPageContainerClass">
+				            <div id="2.1" page="1" prev-left="2.7" prev-right="2.2" class="page center current">
+				                <div class="content" style="overflow:auto; position:absolute; top: 0px; left:0px; right:0px; bottom:0px">
+				                   <h2>Stop 1. Bronze Age Aegean Larnax</h2>
+				                   </br>
+				                   <div id="stop1" class="tourstop">
+								 	   <div class="stopTitle">
+								 	   		<div id="centerDiv" style="width:100%;border-radius:5px;border:3px solid #841B84;">
+												<div id="tourIcons" style="padding-top:5px;padding-left:10px;">				
+									 	   			<span id="map" style="padding-right:80px;padding-left:5px;"><img class="css_btn_icon" onclick="TINY.box.show({image:'../../images/tour2/larnax-detail.jpg',boxid:'frameless',animate:true})" src="../../images/mapicon.png"/></span>
+									 	   			<span class="icons" id="wikipedia" style="padding-right:80px;"><img class="css_btn_icon" onclick="TINY.box.show({iframe:'http://en.wikipedia.org/wiki/Minoan_civilization',boxid:'frameless',width:550,height:450,fixed:false})" src="../../images/wikiicon.png"/></span>
+										 	   		<span class="icons" id="share" style="padding-right:80px;"><img class="css_btn_icon" onclick="window.plugins.socialsharing.share('I am at ROM!','The subject', 'www/images/tour2/larnax_0.jpg', 'http://www.rom.on.ca/en/visit-us/maps-tours/digital-tours/family-two/bronze-age-aegean-larnax')" src="../../images/shareicon2.png"/></span>
+										 	   		<span class="icons" id="bookmark1" bookmarkflag="false"><img class="css_btn_icon" onclick="javascript:bookmarkItem('bookmark1')" src="../../images/bookmark_shaded.png"/></span>
+								 	   			</div>	 	   		
+								 	   		</div>
+								 	   	</div>
+								 	   		</br>
+								 	   		<div style="border:1px solid black;width:100%;"></div>
+								 	   		</br>
+
+								 	   <div class="imageSub" >
+							        		<img src="../../images/tour2/larnax_0.jpg" style="width:100%;" />
+							        		<div class="blackbg"></div>
+							       			<div class="label">The larnax, a Bronze Age Aegean coffin</div>
+							       	   </div>
+								 	   
+								 	   <div class="stopDescription"> 
+								 	   <h3> Galleries of the Bronze Age Aegean and Geometric Greece </h3>
+								 	   <p> <B> Level 3 </B></p>
+								 	   
+								 	   <p> A larnax is a coffin that was used by the Minoans to bury their dead. 
+								 	   This larnax dates back to the Late Minoan period (1300 BCE) and is the only one on display in Canada. </p>
+								 	   <h3>Cool Fact </h3> 
+								 	   <p> The wavy lines painted on the larnax symbolize the sea or body of water the deceased's soul would 
+								 	   have had to travel to get to the afterlife. </p>	
+								 	     
+								 	     <iframe width="500" height="345" src="http://www.youtube.com/embed/n-a8822UGqc"></iframe>
+								  		</div>
+							  		</div>
+				                </div>
+				            </div>
+				            
+				            <div id="2.2" page="2" prev-left="2.1" prev-right="2.3" class="page right">
+				                <div class="content" style="overflow:auto; position:absolute; top: 0px; left:0px; right:0px; bottom:0px">
+				                   <h2>Stop 2. Tomb Figure of Iby-ref</h2>
+				                   </br>
+				                   <div id="stop2" class="tourstop">
+							 	   <div class="stopTitle">
+							 	   		<div>
+							 	   			<div id="centerDiv" style="width:100%;border-radius:5px;border:3px solid #841B84;">
+											<div id="tourIcons" style="padding-top:5px;padding-left:10px;">				
+								 	   			<span id="map" style="padding-right:80px;padding-left:5px;"><img class="css_btn_icon" onclick="TINY.box.show({image:'../../images/tour2/iby-detail.jpg',boxid:'frameless',animate:true})" src="../../images/mapicon.png"/></span>
+								 	   			<span class="icons" id="wikipedia" style="padding-right:80px;"><img class="css_btn_icon" onclick="TINY.box.show({iframe:'http://commons.wikimedia.org/wiki/File:AncientEgyptianTombFigurine-Iby-ref-ROM.png',boxid:'frameless',width:550,height:450,fixed:false})" src="../../images/wikiicon.png"/></span>
+									 	   		<span class="icons" id="share" style="padding-right:80px;"><img class="css_btn_icon" onclick="window.plugins.socialsharing.share('I am at ROM!','The subject', 'www/images/tour2/iby-ref_1.jpg', 'http://www.rom.on.ca/en/visit-us/maps-tours/digital-tours/family-two/iby-ref')" src="../../images/shareicon2.png"/></span>
+									 	   		<span class="icons" id="bookmark2" bookmarkflag="false"><img class="css_btn_icon" onclick="javascript:bookmarkItem('bookmark2')" src="../../images/bookmark_shaded.png"/></span>
+							 	   			</div>	
+							 	   		</div>
+							 	   			</br>
+								 	   		<div style="border:1px solid black;width:100%;"></div>
+								 	   		</br>
+							 	   		</div>
+							 	   	</div>
+							 	   	<div class="imageSub" >
+						        		<img src="../../images/tour2/iby-ref_1.jpg" style="width:100%;" />
+						        		<div class="blackbg"></div>
+						       			<div class="label">Iby-ref, a district councilor of Ancient Egypt</div>
+						       	   </div>
+						       	   
+							 	   <div class="stopDescription"> 
+							 	   <h3> Galleries of Africa: Egypt </h3>
+							 	   <p> <B> Level 3 </B></p>
+							 	   
+							 	   <p> <B>Iby-ref</B> was a district councilor in Ancient Egypt. This rare wooden statue was carved as his double 
+							 	   to secure his survival in the afterlife. It is inscribed with a prayer to ensure that he received sustenance
+							 	    like bread, beer, and linen in the next world. </p>
+							 	    
+							 	   <h3> Cool Fact </h3> 
+							 	   <p> There are many mysteries surrounding Iby-ref. To date this is the only statue of him in the world,
+							 	    preserved from his tomb; the tomb, however, is yet to be found...</p>
+							  			
+							  		<iframe width="500" height="345" src="http://www.youtube.com/embed/-1BddtjQGxk"></iframe>
+							  		</div>
+						  		</div>
+				                </div>
+				            </div>
+				            <div id="2.3" page="3" prev-left="2.2" prev-right="2.4" class="page right">
+				                <div class="content" style="overflow:auto; position:absolute; top: 0px; left:0px; right:0px; bottom:0px">
+				                   <h2>Stop 3. Shiva Nataraja</h2>
+				                   </br>
+				                   <div id="stop3" class="tourstop">
+							 	   <div class="stopTitle">
+							 	   		<div id="centerDiv" style="width:100%;border-radius:5px;border:3px solid #841B84;">
+							 	   			<div id="tourIcons" style="padding-top:5px;padding-left:10px;">				
+								 	   			<span id="map" style="padding-right:80px;padding-left:5px;"><img class="css_btn_icon" onclick="TINY.box.show({image:'../../images/tour2/nataraja-detail.jpg',boxid:'frameless',animate:true})" src="../../images/mapicon.png"/></span>
+								 	   			<span class="icons" id="wikipedia" style="padding-right:80px;"><img class="css_btn_icon" onclick="TINY.box.show({iframe:'http://en.wikipedia.org/wiki/Nataraja',boxid:'frameless',width:550,height:450,fixed:false})" src="../../images/wikiicon.png"/></span>
+									 	   		<span class="icons" id="share" style="padding-right:80px;"><img class="css_btn_icon" onclick="window.plugins.socialsharing.share('I am at ROM!','The subject', 'www/images/tour2/shiva_1.jpg', 'http://www.rom.on.ca/en/visit-us/maps-tours/digital-tours/family-two/shiva-nataraja')" src="../../images/shareicon2.png"/></span>
+									 	   		<span class="icons" id="bookmark3" bookmarkflag="false"><img class="css_btn_icon" onclick="javascript:bookmarkItem('bookmark3')" src="../../images/bookmark_shaded.png"/></span>
+							 	   			</div>	 	
+							 	   		</div>
+							 	   			</br>
+								 	   		<div style="border:1px solid black;width:100%;"></div>
+								 	   		</br>
+							 	   	</div>
+							
+								   <div class="imageSub" >
+						        		<img src="../../images/tour2/shiva_1.jpg" style="width:100%;" />
+						        		<div class="blackbg"></div>
+						       			<div class="label">The Deep Sea Angler Fish</div>
+						       	   </div>
+							 	   <div class="stopDescription"> 
+							 	   <h3> Sir Christopher Ondaatje South Asian Gallery </h3>
+							 	   <p> <B> Level 3, Michael Lee-Chin Crystal </B></p>
+							 	   <p>Go through the black doors on your right to the South Asian/Middle Eastern gallery. 
+							 	   Turn left when you see the Blue Lady. The Shiva Nataraja will be to your right. </p>
+							 	   
+							 	   <p> <b>Shiva Nataraja</b> is a South Indian sculpture of the Hindu diety Shiva in his form as Lord of Dance. 
+							 	   Traditionally, the sculpture was dressed up and carried in parades for different holidays and festivals. </p>
+							 	    
+							 	   <h3> Cool Fact </h3> 
+							 	   <p> Created more than 1000 years ago, Shiva in this form is posed to look as if he's dancing. 
+							 	   He's dancing so fast that his hair whips around his head and he's created a halo of fire around him.</p>
+							  		
+							  		<iframe width="500" height="345" src="http://www.youtube.com/embed/6942C3wdQ5k"></iframe>
+							  		</div>
+						  		</div>
+				                </div>
+				            </div>
+				            <div id="2.4" page="4" prev-left="2.3" prev-right="2.5" class="page right">
+				                <div class="content" style="overflow:auto; position:absolute; top: 0px; left:0px; right:0px; bottom:0px">
+				                   <h2>Stop 4. Kuyu Puppet </h2>
+				                   </br>
+				                   <div id="stop4" class="tourstop">
+							 	   <div class="stopTitle">
+							 	   		<div id="centerDiv" style="width:100%;border-radius:5px;border:3px solid #841B84;">
+							 	   			<div id="tourIcons" style="padding-top:5px;padding-left:10px;">				
+								 	   			<span id="map" style="padding-right:80px;padding-left:5px;"><img class="css_btn_icon" onclick="TINY.box.show({image:'../../images/tour2/kuyu-Detail.jpg',boxid:'frameless',animate:true})" src="../../images/mapicon.png"/></span>
+								 	   			<span class="icons" id="wikipedia" style="padding-right:80px;"><img class="css_btn_icon" onclick="TINY.box.show({iframe:'http://en.wikipedia.org/wiki/Kuyu',boxid:'frameless',width:550,height:450,fixed:false})" src="../../images/wikiicon.png"/></span>
+									 	   		<span class="icons" id="share" style="padding-right:80px;"><img class="css_btn_icon" onclick="window.plugins.socialsharing.share('I am at ROM!','The subject', 'www/images/kuyu_0.jpg', 'http://www.rom.on.ca/en/visit-us/maps-tours/digital-tours/family-two/kuyu-puppet')" src="../../images/shareicon2.png"/></span>
+									 	   		<span class="icons" id="bookmark4" bookmarkflag="false"><img class="css_btn_icon" onclick="javascript:bookmarkItem('bookmark4')" src="../../images/bookmark_shaded.png"/></span>
+							 	   			</div>	 
+							 	   		</div>
+							 	   			</br>
+								 	   		<div style="border:1px solid black;width:100%;"></div>
+								 	   		</br>
+							 	   	</div>
+							 	   	
+							 	   	<div class="imageSub">
+						        		<img src="../../images/tour2/kuyu_0.jpg" style="width:100%;" />
+						        		<div class="blackbg"></div>
+						       			<div class="label">Collection of Kuyu puppets</div>
+						       	   </div>
+							
+							 	   <div class="stopDescription"> 
+							 	   <h3> Shreyas and Mina Ajmera Gallery of Africa </h3>
+							 	   <p> <B> The Americas, and Asia-Pacific, Level 3 </B></p>
+							 	   
+							 	   <p> These wooden Kuyu Puppets were made in the Democratic Republic of Congo in the 1960s and used in puppet plays locally and in neighboring countries. </p>
+							 	    
+							 	   <h3> Cool Fact </h3> 
+							 	   <p> Do any of our puppets look familiar? One of them was carved with the features of Elvis Presley.
+							 	    The character in this play called for a king so the artist thought, why not Presley, the king of Rock and Roll!</p>
+							 	    
+							 	    <iframe width="500" height="345" src="http://www.youtube.com/embed/Rz5T-JLgiI8"></iframe>
+							  		</div>
+						  		</div>
+				                </div>
+				            </div>
+				            <div id="2.5" page="5" prev-left="2.4" prev-right="2.1" class="page right">
+				                <div class="content" style="overflow:auto; position:absolute; top: 0px; left:0px; right:0px; bottom:0px">
+				                   <h2>Stop 5. Gem-Quality Shells</h2>
+				                   </br>
+				                   <div id="stop5" class="tourstop">
+							 	   <div class="stopTitle">
+							 	   		<div id="centerDiv" style="width:100%;border-radius:5px;border:3px solid #841B84;">
+							 	   			<div id="tourIcons" style="padding-top:5px;padding-left:10px;">				
+								 	   			<span id="map" style="padding-right:80px;padding-left:5px;"><img class="css_btn_icon" onclick="TINY.box.show({image:'../../images/tour2/gem-detail.jpg',boxid:'frameless',animate:true})" src="../../images/mapicon.png"/></span>
+								 	   			<span id="wikipedia" style="padding-right:80px;"><img class="css_btn_icon" onclick="TINY.box.show({iframe:'http://en.wikipedia.org/wiki/Seashell',boxid:'frameless',width:550,height:450,fixed:false})" src="../../images/wikiicon.png"/></span>
+									 	   		<span id="share" style="padding-right:80px;"><img class="css_btn_icon" onclick="window.plugins.socialsharing.share('I am at ROM!','The subject', 'www/images/tour2/shells_0.jpg', 'http://www.rom.on.ca/en/visit-us/maps-tours/digital-tours/family-two/gem-quality-shells')" src="../../images/shareicon2.png"/></span>
+									 	   		<span id="bookmark5" bookmarkflag="false"><img class="css_btn_icon" onclick="javascript:bookmarkItem('bookmark5')" src="../../images/bookmark_shaded.png"/></span>
+							 	   			</div>
+							 	   	</div>
+							 	   			</br>
+								 	   		<div style="border:1px solid black;width:100%;"></div>
+								 	   		</br>
+							
+									<div class="imageSub" >
+						        		<img src="../../images/tour2/shells_0.jpg" style="width:100%;"/>
+						        		<div class="blackbg"></div>
+						       			<div class="label">Mollusc shell display.</div>
+						       	   </div>
+						
+							 	   <div class="stopDescription"> 
+							 	   <h3> J. F. Driscoll Family Stair of Wonders </h3>
+							 	   <p> <B> Between Levels 2 & 3 </B></p>
+							 	   
+							 	   <p> This display features <b>110 gem-quality mollusc shells</b>. 
+							 	   Each of these shells represents the life’s work of a mollusc such as a snail, clam, chiton, or nautilus.. </p>
+							 	    
+							 	   <h3> Cool Fact </h3> 
+							 	   <p> Molluscs are one of the oldest and most diverse groups of animals in the world, 
+							 	   with about 100,000 species that we know of and at least another 100,000 species just waiting to be discovered.</p>
+							  		</div>
+							  		<iframe width="500" height="345" src="http://www.youtube.com/embed/rZwHbm145UU"></iframe>
+						  		</div>
+				                </div>
+				            </div>
+				        </div>
+						<div id="2.6" page="6" prev-left="2.5" prev-right="2.7" class="page right">
+				                <div class="content" style="overflow:auto; position:absolute; top: 0px; left:0px; right:0px; bottom:0px">
+				                   <h2>Stop 6. "Gordo," the Barosaurus</h2>
+				                   </br>
+				                   <div id="stop1" class="tourstop">
+								 	   <div class="stopTitle">
+								 	   		<div id="centerDiv" style="width:100%;border-radius:5px;border:3px solid #841B84;">
+												<div id="tourIcons" style="padding-top:5px;padding-left:10px;">				
+									 	   			<span id="map" style="padding-right:80px;padding-left:5px;"><img class="css_btn_icon" onclick="TINY.box.show({image:'../../images/tour2/barosaurus-detail.jpg',boxid:'frameless',animate:true})" src="../../images/mapicon.png"/></span>
+									 	   			<span class="icons" id="wikipedia" style="padding-right:80px;"><img class="css_btn_icon" onclick="TINY.box.show({iframe:'http://en.wikipedia.org/wiki/Barosaurus',boxid:'frameless',width:550,height:450,fixed:false})" src="../../images/wikiicon.png"/></span>
+										 	   		<span class="icons" id="share" style="padding-right:80px;"><img class="css_btn_icon" onclick="window.plugins.socialsharing.share('I am at ROM!','The subject', 'www/images/tour2/gordo_0.jpg', 'http://www.rom.on.ca/en/visit-us/maps-tours/digital-tours/family-two/barosaurus')" src="../../images/shareicon2.png"/></span>
+										 	   		<span class="icons" id="bookmark6" bookmarkflag="false"><img class="css_btn_icon" onclick="javascript:bookmarkItem('bookmark6')" src="../../images/bookmark_shaded.png"/></span>
+								 	   			</div>	 	   		
+								 	   		</div>
+								 	   	</div>
+								 	   		</br>
+								 	   		<div style="border:1px solid black;width:100%;"></div>
+								 	   		</br>
+
+								 	   <div class="imageSub" >
+							        		<img src="../../images/tour2/gordo_0.jpg" style="width:100%;" />
+							        		<div class="blackbg"></div>
+							       			<div class="label">Gordo, the Barosaurus</div>
+							       	   </div>
+								 	   
+								 	   <div class="stopDescription"> 
+								 	   <h3> James and Louise Temerty Galleries of the Age of Dinosaurs </h3>
+								 	   <p> <B> Level 2, Michael Lee-Chin Crystal </B></p>
+								 	   
+								 	   <p> This long-necked sauropod from the Jurassic Period was one of the longest animals ever to walk the earth.
+								 	    When alive, the <b>Barosauru</b>s could grow up to 90-feet long and weigh over 14,000 kilograms. </p>
+								 	   <h3>Cool Fact </h3> 
+								 	   <p> Gordo is the largest dinosaur skeleton composed of real fossil bones on display in Canada,
+								 	    and one of three Barosaurus skeletons on display in the World. </p>	
+								 	     
+								 	     <iframe width="500" height="345" src="http://www.youtube.com/embed/8a_DFpA36Ac"></iframe>
+								  		</div>
+							  		</div>
+				                </div>
+				            </div>	
+				            <div id="2.7" page="7" prev-left="2.6" prev-right="2.1" class="page right">
+				                <div class="content" style="overflow:auto; position:absolute; top: 0px; left:0px; right:0px; bottom:0px">
+				                   <h2>Stop 7. Bronze Age Aegean Larnax</h2>
+				                   </br>
+				                   <div id="stop1" class="tourstop">
+								 	   <div class="stopTitle">
+								 	   		<div id="centerDiv" style="width:100%;border-radius:5px;border:3px solid #841B84;">
+												<div id="tourIcons" style="padding-top:5px;padding-left:10px;">				
+									 	   			<span id="map" style="padding-right:80px;padding-left:5px;"><img class="css_btn_icon" onclick="TINY.box.show({image:'../../images/tour2/sloth-detail.jpg',boxid:'frameless',animate:true})" src="../../images/mapicon.png"/></span>
+									 	   			<span class="icons" id="wikipedia" style="padding-right:80px;"><img class="css_btn_icon" onclick="TINY.box.show({iframe:'http://en.wikipedia.org/wiki/Giant_Ground_Sloth',boxid:'frameless',width:550,height:450,fixed:false})" src="../../images/wikiicon.png"/></span>
+										 	   		<span class="icons" id="share" style="padding-right:80px;"><img class="css_btn_icon" onclick="window.plugins.socialsharing.share('I am at ROM!','The subject', 'www/images/tour2/sloth_0.jpg', 'http://www.rom.on.ca/en/visit-us/maps-tours/digital-tours/family-two/ground-sloth')" src="../../images/shareicon2.png"/></span>
+										 	   		<span class="icons" id="bookmark7" bookmarkflag="false"><img class="css_btn_icon" onclick="javascript:bookmarkItem('bookmark7')" src="../../images/bookmark_shaded.png"/></span>
+								 	   			</div>	 	   		
+								 	   		</div>
+								 	   	</div>
+								 	   		</br>
+								 	   		<div style="border:1px solid black;width:100%;"></div>
+								 	   		</br>
+
+								 	   <div class="imageSub" >
+							        		<img src="../../images/tour2/sloth_0.jpg" style="width:100%;" />
+							        		<div class="blackbg"></div>
+							       			<div class="label">A Giant Ground Sloth skeleton</div>
+							       	   </div>
+								 	   
+								 	   <div class="stopDescription"> 
+								 	   <h3> Reed Gallery of the Age of Mammals</h3>
+								 	   <p> <B> Level 2, Michael Lee-Chin Crystal </B></p>
+								 	   
+								 	   <p> The <b>Giant Ground Sloth</b> was a plant-eating mammal that lived in North and South America. 
+								 	   Measuring up to 20 feet from head to tail, this extinct animal was much larger than any of its relatives today,
+								 	    which include armadillos, anteaters and tree sloths. </p>
+								 	   <h3>Cool Fact </h3> 
+								 	   <p> We really know our Ground Sloths! The ROM has the second best collection of real specimens in the world,
+								 	    and this is one of the few skeletons of its kind that you'll see accurately mounted on all four legs.
+								 	     Most museums mount this species standing on its rear legs, reaching for a tree branch. </p>	
+								 	     
+								 	     <iframe width="500" height="345" src="http://www.youtube.com/embed/S-vqQioKtQU"></iframe>
+								</div>
+							</div>
+						</div>
+					</div>			        
+				</div>   
+        	</div>
+
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+        
+    </body>
+    <div class="bottomBar">
+		<table id="menuTable">
+			<tbody>
+				<tr>
+					<td id="menuTd">
+						<a onclick="app.updateDBbySwitchToPage(app.getUserId(), pagingSlider._currentPage, '../main.html', 2);"><div class="bottomBarButton"> Home </div></a>
+					</td>
+					<td id="menuTd">
+						<a onclick="app.updateDBbySwitchToPage(app.getUserId(), pagingSlider._currentPage, '../maps/map.html', 2);"><div class="bottomBarButton"> Maps </div></a>
+					</td>
+				</tr>
+	  	</table>
+	</div>  
+</html>
